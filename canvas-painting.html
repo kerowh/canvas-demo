@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//at.alicdn.com/t/font_1149638_vvpzbn1xor.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300" ></canvas>
+    <div id="actions" class="actions">
+        <svg id="brush" class="icon active" aria-hidden="true">
+            <!-- 让画笔默认是激活的 -->
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+
+        <svg id="eraser" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+
+        <svg id="shanchu" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shanchu"></use>
+        </svg>
+
+        <svg id="save" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-save"></use>
+        </svg>
+
+    </div>
+    <ol id ="colors" class="colors">
+        <li id ="black" class="black active"></li>
+        <li id ="red" class="red"></li>
+        <li id ="green" class="green"></li>
+        <li id ="blue" class="blue"></li>
+    </ol>
+
+    <ol id="sizes" class="sizes">
+        <li id="think" class="think"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    /* overflow: hidden；阻止页面来回跳动，结果是没用的 */
+}
+
+#canvas {
+    display: block;
+    background: white;
+    /* 绝对定位使程序在手机上正常运行 */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* 这样在手机上就不会上下浮动 */
+}
+
+.actions {
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 20px;
+}
+
+.actions svg{
+    
+    width: 1.5em;
+    height: 1.5em;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+/**如果点击了那么就使svg加上一个active类，表示点击了，同时把颜色改成红色**/
+.actions svg.active{
+    fill: red;
+    transform: scale(1.2);
+}
+
+.colors{
+    position: fixed;
+    top: 60px;
+    left: 15px;
+}
+
+.colors>li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    margin: 20px 0;
+    transition: all 0.3s;
+   
+}
+
+.colors>li.active{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.95);
+    transform: scale(1.2)
+}
+
+.colors>li.black {
+    background:black;
+}
+
+.colors>li.red{
+    background: red;
+}
+
+.colors>li.green{
+    background:green;
+}
+
+.colors>li.blue{
+    background: blue;
+}
+
+.sizes{
+    position: fixed;
+    right: 30px;
+    top: 60px;
+}
+
+.sizes .close{
+    display: none;
+}
+
+.sizes>li{
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+.sizes>li.active{
+    transform: scale(1.2);
+}
+
+.sizes>li.think{
+    height: 0;
+    width: 40px;
+    border-top: 3px solid black; 
+}
+
+.sizes>li.thick{
+    height: 0;
+    width: 40px;
+    border-top: 10px solid black;
+}
+
+
+
